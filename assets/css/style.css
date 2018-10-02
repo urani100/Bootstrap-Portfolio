@@ -1,7 +1,3 @@
-*{
-    box-sizing:border-box;
-}
-
 
 .container{
     
@@ -33,15 +29,13 @@
     word-spacing: 9px;
 
 }
-
-hr{
-    color:blue;
+navLink:hover{
+    color: #4aaaa5;
 }
 
 .pageTitle{
     
     padding: 15px 0 15px 10px;
-    /*margin-left: 300px;*/
     color: #4aaaa5;
 }
 
@@ -70,3 +64,18 @@ html {
     color: white;
     border-top: 4px solid #4aaaa5;
   }
+
+
+/*- specific to contact form ---------------------------------------------------------------*/
+
+.formSection{
+    padding-left: 210px;
+    width: 960px;
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+    color: #cccccc;
+}
+
+.buttonSection{
+    margin-left: 200px;
+    
+}
