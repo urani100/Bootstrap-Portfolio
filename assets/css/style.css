@@ -66,7 +66,7 @@ html {
   }
 
 
-/*- specific to contact form ---------------------------------------------------------------*/
+/*- specific to contact page ---------------------------------------------------------------*/
 
 .formSection{
     padding-left: 210px;
@@ -79,3 +79,24 @@ html {
     margin-left: 200px;
     
 }
+
+/*- specific to portfolio page  ---------------------------------------------------------------*/
+
+
+.folioRow{
+    width: 55%;
+    
+}
+
+.folioCol{
+    padding-bottom: 5px;
+
+}
+
+.imgPortf{
+  width: 155px;
+  height: 155px;
+  margin-left: 10px;
+  margin-bottom: 10px;
+}
+
