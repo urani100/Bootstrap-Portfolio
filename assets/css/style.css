@@ -7,24 +7,28 @@
     padding-top:16px;
     padding-bottom: 16px;
     text-align:center;
+    
 }
 .navRow{
     border-bottom: 4px solid  #cccccc;
     
+    
 }
 .navSection{
-    
     padding-top:16px;
     padding-bottom: 16px;
+     
 }
-.navLink{
+
+a{
     color: #777777;
     text-decoration: none;
     word-spacing: 9px;
-}
 
-navLink:hover{
+}
+a:hover{
     color: #4aaaa5;
+    text-decoration: none;
 }
 
 .pageTitle{
@@ -32,7 +36,7 @@ navLink:hover{
     color: #4aaaa5;
 }
 
-.mainSection{
+.mainSection{ 
     padding: 15px 0 15px 5px;
     text-align: justify;
 }
@@ -72,14 +76,12 @@ p{
 
 /*- specific to portfolio page  ---------------------------------------------------------------*/
 
-
 .folioRow{
     width: 55%;
-    
 }
 
 .folioCol{
-    padding-bottom: 5px;
+    padding-bottom: 50px;
 
 }
 
@@ -91,54 +93,17 @@ p{
 }
 
 /*---specific to Media Query-------------------------------------------------------------------*/
-
-
-@media only screen and (min-width: 980px) {
-    .navRow{
-        padding-left: 170px;
-        padding-right: 200px;
-       
-    }
-    .pageTitle{
-        padding-left: 170px;
-    }
-
-    .mainSection{
-        padding-left: 170px;
-        padding-right: 170px;
-
-    }
-
-}
-
-
-@media only screen and (min-width: 768px) {
-    .navRow{
-        padding-left: 0;
-        padding-right: 0x;
-       
-    }
-    .pageTitle{
-        padding-left: 0px;
-    }
-
-    .mainSection{
-        padding-left: 0x;
-        padding-right: 0px;
-
-    }
-
-}
-
-
-
-@media only screen and (max-width: 640px) {
+ 
+/*// Small devices (landscape phones, 576px and up)*/
+ 
+@media (min-width: 576px) {
     .navRow{
         padding-left: 0px;
         padding-right: 0px;
         text-align: center;
         
     }
+    
     .nav-link{
        padding-right: 35px;
     }
@@ -165,5 +130,74 @@ p{
     .stickyFooter{
         font-size: 13px;
     }
-    
+
 }
+
+/* Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) { 
+  
+
+  .logo{
+      max-width: fit-content;
+      flex:auto;
+      margin-left: 0px;
+    }
+  
+  
+  .navSection{
+    max-width: fit-content;
+    flex:auto;
+    margin-left:160px ;
+   }
+
+   .pageTitle{
+    margin: 0;
+    padding: 15px 0 15px 0;
+
+    }
+   .imgSection{
+    margin: 0px;
+    padding: 0;
+   }
+ 
+   
+   .para{
+    margin: 0 20px 0 20px;
+    flex: 0 0 68%;
+    max-width: 70%;
+   }
+
+   img{
+    margin: 10px 20px 0 20px;
+
+   }
+
+ 
+}
+
+
+
+/* Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) { 
+
+    .navRow{
+        padding-left: 170px;
+        padding-right: 200px;
+       
+    }
+
+    .navSection{
+        margin-left:480px;
+    }
+    
+    .pageTitle{
+        padding-left: 170px;
+    }
+
+    .mainSection{
+        padding-left: 170px;
+        padding-right: 170px;
+
+    }
+}
+

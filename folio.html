@@ -5,79 +5,61 @@
     <title>Portfolio</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="assets/css/reset.css"/>
-    <link rel="stylesheet" href="assets/css/style.css"/>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-   
+    <link rel="stylesheet" href="assets/css/style.css"/>
     
 </head>
 <body>
-    
+    <div class="container-fluid main">
         <div class="row navRow"> <!--logo & nav  2 columns -->
-            <div class="col-3 logo"> <!-- logo-->
-                <h1>M. LECONTE</h1> 
+            <div class="col-12 col-md-3 logo"> <!-- logo-->
+                <h1>M. LECONTE</h1>
             </div>
-            <div class="col-7 navSection"> <!--nav-->
-                <ul class="nav justify-content-end">
-                    <li class="nav-item">
-                        <a class="nav-link navLink" href="index.html">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link navLink" href="folio.html">Portfolio</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link navLink" href="contact.html">contact</a>
-                    </li>
-                </ul>
+            <div class="col-12 col-md-9 navSection"> <!--nav-->
+                <nav class="navLink">
+                    <a href="index.html">About | </a>  
+                    <a href="folio.html">Portfolio | </a> 
+                    <a href="contact.html">Contact</a>
+                </nav>
+            </div>
+        </div>
+        <!--div class="row mainBorder"--> <!--border section-->
+        <div class="row pageTitle"> <!--page title-->
+            <div class="col-12"> 
+                <h1>Portfolio</h1>
+            </div>
+        </div>
+        <hr>
+        <div class="row mainSection"> <!--main section image & paragraph-->
+            <div class="row folioRow"> <!--- portfolio picture row 1-->
+                <div class="col-5 folioCol"> <!--- portfolio picture col 1-->
+                    <img src="/Users/ml/Desktop/Bootcamp/homework/Bootstrap-Portfolio/assets/images/porfolio_1.png" alt="" class="imgPortf">
+                </div>
+                <div class="col-5 folioCol"> <!--- portfolio picture col 2-->
+                    <img src="/Users/ml/Desktop/Bootcamp/homework/Bootstrap-Portfolio/assets/images/porfolio_2.png" alt="" class="imgPortf">
+                </div>
+            </div>
 
+            <div class="row folioRow"> <!--- portfolio picture row 2-->
+                <div class="col-5 folioCol"> <!--- portfolio picture col 1-->
+                    <img src="/Users/ml/Desktop/Bootcamp/homework/Bootstrap-Portfolio/assets/images/porfolio_3.png" alt="" class="imgPortf">
+                </div>
+                <div class="col-5 folioCol"> <!--- portfolio picture col 2-->
+                    <img src="/Users/ml/Desktop/Bootcamp/homework/Bootstrap-Portfolio/assets/images/porfolio_4.png" alt="" class="imgPortf">
+                </div>
+            </div>
+
+            <div class="row folioRow"> <!--- portfolio picture row 3-->
+                <div class="col-5 folioCol"> <!--- portfolio picture col 1-->
+                    <img src="/Users/ml/Desktop/Bootcamp/homework/Bootstrap-Portfolio/assets/images/porfolio_5.png" alt="" class="imgPortf">
+                </div>
             </div>
 
         </div>
-
-        <div class="container">
-        <!--div class="row mainBorder"--> <!--border section-->
-            <div class="row pageTitle"> <!--page title-->
-                <div class="col-12"> 
-                    <h1>Portfolio</h1>
-                </div>
-            </div>
-            
-            <hr>
-
-            <div class="row mainSection"> <!--main section for input-->
-
-                <div class="row folioRow"> <!--- portfolio picture row 1-->
-                    <div class="col-5 folioCol"> <!--- portfolio picture col 1-->
-                        <img src="/Users/ml/Desktop/Bootcamp/homework/Bootstrap-Portfolio/assets/images/porfolio_1.png" alt="" class="imgPortf">
-                    </div>
-                    <div class="col-5 folioCol"> <!--- portfolio picture col 2-->
-                        <img src="/Users/ml/Desktop/Bootcamp/homework/Bootstrap-Portfolio/assets/images/porfolio_2.png" alt="" class="imgPortf">
-                    </div>
-                </div>
-
-                <div class="row folioRow"> <!--- portfolio picture row 2-->
-                    <div class="col-5 folioCol"> <!--- portfolio picture col 1-->
-                        <img src="/Users/ml/Desktop/Bootcamp/homework/Bootstrap-Portfolio/assets/images/porfolio_3.png" alt="" class="imgPortf">
-                    </div>
-                    <div class="col-5 folioCol"> <!--- portfolio picture col 2-->
-                        <img src="/Users/ml/Desktop/Bootcamp/homework/Bootstrap-Portfolio/assets/images/porfolio_4.png" alt="" class="imgPortf">
-                    </div>
-                </div>
-
-                <div class="row folioRow"> <!--- portfolio picture row 3-->
-                    <div class="col-5 folioCol"> <!--- portfolio picture col 1-->
-                        <img src="/Users/ml/Desktop/Bootcamp/homework/Bootstrap-Portfolio/assets/images/porfolio_5.png" alt="" class="imgPortf">
-                    </div>
-                </div>
-
-                
-            </div>
-            
     </div>
-     
     <!-- stiky footer -->
-    <footer class="footer">
-    &copy;Urani
-    </footer>
+    <div class="fixed-bottom stickyFooter"> &copy;Urani</div>
+   
     
 </body>
 </html>
